@@ -48,9 +48,11 @@ public:
 
     void print()
     {
-        cout << "name " << this->name << endl;
-        cout << "health " << this->health << endl;
-        cout << "wealth " << this->wealth << endl;
+        cout << endl;
+        cout << "[name " << this->name <<  " ," << endl;
+        cout << "health " << this->health <<  " ," << endl;
+        cout << "wealth " << this->wealth << " ]" <<  endl;
+         cout << endl;
     }
 
     int getHealth()
@@ -76,9 +78,9 @@ public:
 
 int main()
 {
-Hero suresh(70,'C');
 
-
+      cout << "................start............." << endl;
+// Hero suresh(70,'C');
 Hero hero1;
 hero1.setHealth(12);
 hero1.setWealth('D');
@@ -87,37 +89,37 @@ hero1.setName(name);
 hero1.print();
  //use default copy constructor
 
- Hero hero2(hero1);
- hero2.print();
+//  Hero hero2(hero1);
+//  hero2.print();
 
 
-    cout << ".................................." << endl;
-    Hero S(70, 'C');
-    S.print();
-    // copy constructor
-    Hero R(S);
-    R.print();
-    cout << ".................................." << endl;
-    Hero h1(10);
-    cout << "address of h1-> " << &h1 << endl;
-    cout << "size :" << sizeof(h1) << endl; // garbage value
-    cout << "health is " << h1.getHealth() << " garbage value" << endl;
-    cout << "wealth is " << h1.getWealth() << " garbage value" << endl;
-    h1.setHealth(12);
-    h1.setWealth('h');
-    cout << "health is " << h1.getHealth() << endl;
-    cout << "wealth is " << h1.getWealth() << endl;
-    cout << ".................................." << endl;
+//     cout << ".................................." << endl;
+//     Hero S(70, 'C');
+//     S.print();
+//     // copy constructor
+//     Hero R(S);
+//     R.print();
+//     cout << ".................................." << endl;
+//     Hero h1(10);
+//     cout << "address of h1-> " << &h1 << endl;
+//     cout << "size :" << sizeof(h1) << endl; // garbage value
+//     cout << "health is " << h1.getHealth() << " garbage value" << endl;
+//     cout << "wealth is " << h1.getWealth() << " garbage value" << endl;
+//     h1.setHealth(12);
+//     h1.setWealth('h');
+//     cout << "health is " << h1.getHealth() << endl;
+//     cout << "wealth is " << h1.getWealth() << endl;
+//     cout << ".................................." << endl;
 
-    Hero *h2 = new Hero;
-    cout << "health is " << (*h2).getHealth() << endl;
-    cout << "wealth is " << (*h2).getWealth() << endl;
+//     Hero *h2 = new Hero;
+//     cout << "health is " << (*h2).getHealth() << endl;
+//     cout << "wealth is " << (*h2).getWealth() << endl;
 
-    h2->setHealth(15);
-    h2->setWealth('v');
+//     h2->setHealth(15);
+//     h2->setWealth('v');
 
-    cout << "health is " << (*h2).getHealth() << endl;
-    cout << "wealth is " << (*h2).getWealth() << endl;
+//     cout << "health is " << (*h2).getHealth() << endl;
+//     cout << "wealth is " << (*h2).getWealth() << endl;
 
     return 0;
 }
